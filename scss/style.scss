@@ -1,0 +1,30 @@
+@import "_reset.scss";
+@import "_normalize.scss";
+@import "_fonts.scss";
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	color: rgb(121, 11, 246);
+}
+
+.wrapper {
+	overflow: hidden;
+	position: relative;
+}
+
+.container {
+	max-width: 1200px;
+	padding: 0px 15px;
+	margin: 0 auto;
+}
+
+@import "_header.scss";
+
+.intro {
+	background-image: url(../img/intro_bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
