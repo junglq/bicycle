@@ -459,8 +459,8 @@ body {
   }
   .header__menu {
     position: fixed;
-    top: 0%;
-    right: -100%;
+    top: -100%;
+    right: 0%;
     height: 100%;
     width: 100%;
     -webkit-transition: all 0.3s linear;
@@ -468,6 +468,9 @@ body {
     z-index: 2;
     overflow: auto;
     background-color: #4d4959;
+  }
+  .header__menu.active {
+    top: 0%;
   }
   .header__menu .header__list {
     padding: 150px 0px 20px 0px;
@@ -493,7 +496,7 @@ body {
     margin: 0;
   }
   .header__menu .header__list li .header__link {
-    font-size: 28px;
+    font-size: 25px;
     color: #fff;
   }
   .header__menu .header__list li:after {
@@ -503,8 +506,5 @@ body {
     top: 40px;
     right: 50%;
     margin-top: -1px;
-  }
-  .header__menu.active {
-    right: 0%;
   }
 }

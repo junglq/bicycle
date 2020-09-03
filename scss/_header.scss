@@ -159,14 +159,17 @@
 	}
 	.header__menu {
 		position: fixed;
-		top: 0%;
-		right: -100%;
+		top: -100%;
+		right: 0%;
 		height: 100%;
 		width: 100%;
 		transition: all 0.3s linear;
 		z-index: 2;
 		overflow: auto;
 		background-color: #4d4959;
+		&.active {
+			top: 0%;
+		}
 		& .header__list {
 			padding: 150px 0px 20px 0px;
 			justify-content: center;
@@ -185,7 +188,7 @@
 					margin: 0;
 				}
 				& .header__link {
-					font-size: 28px;
+					font-size: 25px;
 					color: #fff;
 				}
 				&:after {
@@ -197,9 +200,6 @@
 					margin-top: -1px;
 				}
 			}
-		}
-		&.active {
-			right: 0%;
 		}
 	}
 }
