@@ -94,6 +94,9 @@
 @media (max-width: 767px) {
 	body.lock {
 		overflow: hidden;
+		.header:before {
+			background-color: #4d4959;
+		}
 	}
 	.header {
 		top: 15px;
@@ -165,8 +168,7 @@
 		overflow: auto;
 		background-color: #4d4959;
 		& .header__list {
-			padding: 0px;
-			height: 100vh;
+			padding: 150px 0px 20px 0px;
 			justify-content: center;
 			align-items: center;
 			flex-direction: column;
