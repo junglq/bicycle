@@ -61,13 +61,13 @@ $(document).ready(function () {
     })
 
     // Accordion
-    $('.block__title').click(function () {
-        if ($('.block').hasClass('one')) {
-            $('.block__title').not($(this)).removeClass('active');
-            $('.block__text').not($(this).next()).slideUp(300);
-        }
-        $(this).toggleClass('active').next().slideToggle(300);
-    })
+    // $('.block__title').click(function () {
+    //     if ($('.block').hasClass('one')) {
+    //         $('.block__title').not($(this)).removeClass('active');
+    //         $('.block__text').not($(this).next()).slideUp(300);
+    //     }
+    //     $(this).toggleClass('active').next().slideToggle(300);
+    // })
 
     // Animation items
     const animItems = document.querySelectorAll('.anim-items'); // Массив анимируемых элементов
@@ -110,14 +110,14 @@ $(document).ready(function () {
         }, 300);
     }
 
-    function ibg(){
+    function ibg() {
 
-        $.each($('.ibg'), function(index, val) {
-        if($(this).find('img').length>0){
-        $(this).css('background-image','url("'+$(this).find('img').attr('src')+'")');
-        }
+        $.each($('.ibg'), function (index, val) {
+            if ($(this).find('img').length > 0) {
+                $(this).css('background-image', 'url("' + $(this).find('img').attr('src') + '")');
+            }
         });
-        }
-        
-        ibg();
+    }
+
+    ibg();
 })
