@@ -575,6 +575,18 @@ body {
   }
 }
 
+.brands__rev .brands__column {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.brands__rev .brands__column-b {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
 .brands__row {
   display: -webkit-box;
   display: -ms-flexbox;

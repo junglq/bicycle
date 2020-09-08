@@ -120,6 +120,14 @@ body {
 }
 
 .brands {
+	&__rev {
+		.brands__column {
+			order: 1;
+			&-b {
+				order: 2;
+			}
+		}
+	}
 	&__row {
 		display: flex;
 	}
