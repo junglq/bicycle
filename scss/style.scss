@@ -329,9 +329,43 @@ body {
 	}
 
 	&__footer {
+		padding: 75px 0px;
+		text-align: center;
+		background-color: #282f35;
 	}
 
 	&__btn {
+		display: inline-block;
+		font-size: 14px;
+		text-transform: uppercase;
+		height: 50px;
+		line-height: 48px;
+		color: #fff;
+		padding: 0px 60px;
+		border: 1px solid rgba(255, 255, 255, 0.5);
+		letter-spacing: 2.8px;
+		font-weight: 700;
+	}
+
+	@media (max-width: 1100px) {
+		&__body {
+			flex-wrap: wrap;
+		}
+		&__column {
+			flex: 0 1 50%;
+			&:first-child {
+				flex: 1 1 100%;
+			}
+			&:last-child {
+				flex: 1 1 100%;
+			}
+		}
+		&__footer {
+			padding: 50px 0px;
+		}
+		&__btn {
+			padding: 0px 30px;
+		}
 	}
 }
 .block-shop {
