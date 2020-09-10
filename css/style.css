@@ -975,6 +975,10 @@ body {
   color: #333;
 }
 
+.subscribe__input .input:-ms-clear {
+  display: none;
+}
+
 .subscribe__button {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 126px;

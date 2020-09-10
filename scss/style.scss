@@ -435,6 +435,9 @@ body {
 			font-style: normal;
 			color: #333;
 		}
+		&:-ms-clear {
+			display: none;
+		}
 	}
 }
 .subscribe__button {
