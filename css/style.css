@@ -214,20 +214,14 @@ textarea {
   font-style: normal;
 }
 
-html {
-  height: 100%;
-}
-
 body {
   font-family: "Lato", sans-serif;
   font-size: 14px;
   color: #790bf6;
-  height: 100%;
 }
 
 .wrapper {
   overflow: hidden;
-  min-height: 100%;
 }
 
 .container {
@@ -973,10 +967,6 @@ body {
 .subscribe__input .input:focus {
   font-style: normal;
   color: #333;
-}
-
-.subscribe__input .input:-ms-clear {
-  display: none;
 }
 
 .subscribe__button {
